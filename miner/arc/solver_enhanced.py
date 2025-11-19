@@ -245,7 +245,7 @@ class EnhancedARCSolver:
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.0,  # Deterministic for consistency
+                  # Deterministic for consistency
             )
             
             content = response.choices[0].message.content
@@ -287,7 +287,7 @@ Return ONLY the transformed output grid (numbers separated by spaces):"""
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.1,  # Slightly higher for variation
+                  # Slightly higher for variation
             )
             
             content = response.choices[0].message.content
