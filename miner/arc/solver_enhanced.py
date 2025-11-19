@@ -46,7 +46,10 @@ from loguru import logger
 import time
 from miner.arc.cache import get_cached_solution, cache_solution
 from miner.arc.advanced_patterns import AdvancedPatternDetector, AdvancedTransformations
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 
 class EnhancedARCSolver:
     """
